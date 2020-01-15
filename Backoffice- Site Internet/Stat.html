@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="unik.CSS">
+        <link rel="icon" href="./images/logo.png">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <title>Admin</title>
+
+    </head>
+
+    <body>
+
+    <!--Tout l'ensemble-->    
+    <div class="all" >   
+
+        <!--container-->
+        <div class= "container">
+
+            <!--Barre 1 à droite : logo et menu-->
+            <div id="barre1">
+                <!--Logo-->
+                <div class="logo"><a href="./index.html">
+                    <img src="./images/logo.png" alt="logo"></a>
+                </div>
+                <!--fin logo-->
+                
+                <!--Catégories du menu-->
+                <div class="menu">
+                    
+                    <ul>
+                        <li class="categorie"><a class="a" href="#"><img src="./images/home.png" alt="icone site">
+                        Site</a>
+                            <ul class="sousMenu">
+                                <li><a href="#">Panneau d'adminisration</a></li>
+                                <li><a href="#">Maintenance</a></li>
+                                <li><a href="#">Profile</a></li>
+                                <li><a href="#">Configurations</a></li>
+                            </ul>
+                        </li>  
+                        <li class="categorie"><a href="stat.html"><img src="./images/icon_dashboard.png" alt="icone statistique">
+                            Statistiques</a>
+                            <ul class="sousMenu">
+                                <li><a href="#">Visiteurs</a></li>
+                                <li><a href="#">Commandes</a></li>
+                           </ul>     
+                        </li>  
+                        <li class="categorie"><a class="a" href="#"><img src="./images/icon_inbox.png" alt="icone moderation">
+                            Modération</a>
+                            <ul class="sousMenu">
+                                <li><a href="#">Avis produit</a></li>
+                                <li><a href="#">Comentaire blog</a></li>
+                            
+                            </ul>  
+                        <li class="categorie"><a class="a" href="./Produits.html"><img src="./images/icon_products.png" alt="icone produit">
+                            Produits</a>
+                            <ul class="sousMenu">
+                                <li><a href="#">Transporteurs</a></li>
+                                <li><a href="#">Stocks</a></li>
+                                <li><a href="#">Livraison</a></li>
+                                <li><a href="#">Catalogue</a></li>
+                            </ul>     
+                        </li> 
+                        <li class="categorie"><a class="a" href="#"><img src="./images/icon_Invoices.png" alt="icone paiement">
+                            Services de paiment</a>
+                            <ul class="sousMenu">
+                                <li><a href="#">Devises</a></li>
+                                <li><a href="#">Méthode de paiement</a></li>
+                            </ul>     
+                        </li> 
+                        <li class="categorie"><a class="a" href="./Users.html"><img src="./images/icon_customers.png" alt="icone moderation">
+                            Utilisateurs</a>
+                            <ul class="sousMenu">
+                                <li><a href="#">Niveau d'accès</a></li>
+                                <li><a href="#">Groupes</a></li>
+                                <li><a href="#">Note d'information</a></li>
+                            </ul>     
+                        </li> 
+                        <li class="categorie"><a class="a" href="#"><img src="./images/icon_chat-room.png" alt="icone blog">
+                            Blog</a>
+                            <ul class="sousMenu">
+                                <li><a href="#">Articles</a></li>
+                            </ul>     
+                        </li> 
+                        <li class="categorie"><a class="a" href="#"><img src="./images/icon_calendar.png" alt="icone calendrier">
+                            Calendrier</a>
+                        </li> 
+                        <li class="categorie"><a class="a" href="#"><img src="./images/icon_help-center.png" alt="icone moderation">
+                            Aide</a>
+                        </li> 
+                        <li class="categorie"><a class="a" href="#"><img src="./images/icon_setting.png" alt="icone moderation">
+                            Paramètres</a>
+                        </li> 
+                    </ul>
+
+                </div>
+                <!--fin menu-->
+            </div>
+            <!--fin barre 1: logo et menu-->
+            
+            <!--barre du haut et contenu-->
+            <div class="barre2etContenu">
+                <!--Barre 2 en haut : contenant barre de recherche et profile-->
+                <div id="barre2">
+                    <!--Barre de recherche-->
+                    <div class="recherche">
+                        <button classe="button" type="submit">
+                            <i class="fa fa-search">
+                            <img src="./images/loupe.png">
+                            </i>
+                        </button>
+                        <input type="text" placeholder="Recherche, commandes, aide...">    
+                    </div>
+                    <!--fin barre de recherche-->
+
+                    <!--Icons et Profile-->
+                    <div class="iconsEtProfile">
+                        <!--Icons-->
+                        <div class="icons">
+                            <div class="icon1">
+                                <button type="submit">
+                                    <i class="">
+                                    <img src="./images/support.png">
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="icon2">
+                                <button type="submit">
+                                    <i class="">
+                                    <img src="./images/message.png">
+                                    </i>
+                                </button>
+                            </div>
+                            <div class="icon3">
+                                <button type="submit">
+                                    <i class="">
+                                    <img src="./images/notification.png">
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                        <!--fin icons-->
+
+                        <!--Profile--> 
+                        <div class="profile">
+                            <!--Connexion/Déconnexion-->
+                            <div class="liste">
+                                <ul>
+                                    <li class="deroulant"><a href="#">John Doe</a>
+                                        <ul class="sous">
+                                        <li><a href="#">Se déconnecter</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--fin Connexion/Déconnexion-->
+
+                            <!--Avatar-->
+                            <div class="avatar">
+                                <img src="./images/photo.jpg" class="img-circle" alt="Avatar">
+                            </div>
+                            <!--fin avatar-->
+                        </div>
+                        <!--fin profile-->
+
+                    </div> 
+                    <!--fin icons et profile-->   
+
+                </div>  
+                <!--fin barre 2-->   
+                
+                <!--contenu-->
+                <div id="contenu">
+                    
+                    <!--h1-->
+                    <h1 class="apercu">Aperçu</h1>
+                    <!--fin h1-->
+
+                    <!--gestion position images-->
+                    <div class="position">
+                        <!--3 graphs-->
+                        <div class="graphs">
+                            <div class="graph"><img src="./images/pageStat/views.png" alt=""></div>
+                            <div class="graph"><img src="./images/pageStat/sales.png" alt=""></div>
+                            <div class="graph"><img src="./images/pageStat/total.png" alt=""></div>
+                        </div>
+                        <!--fin 3 graphs-->
+
+                        <!--Statistiques-->
+                        <div class="stat">
+                            <img src="./images/pageStat/stats.png" alt="">
+                        </div>
+                        <!--fin statistique-->
+
+                        <!--Référent et carte-->
+                        <div class="refEtCarte">
+
+                            <!--Référent-->
+                            <div class="referent">
+                                <img src="./images/pageStat/referent.png" alt="">
+                            </div>
+                            <!--fin référent-->
+
+                            <!--Détails carte-->
+                            <div class="carte">
+                                <img src="./images/pageStat/map.png" alt="">
+                            </div>
+                            <!--fin détails carte-->
+
+                        </div>
+                       <!--Fin référent et carte-->
+
+                    </div>
+                    <!--fin gestion position images-->
+
+                </div>  
+                <!--fin contenu-->
+
+            </div>
+            <!--fin barre du haut et contenu-->
+
+        </div>
+        <!--fin container-->
+        
+    </div>
+    <!--fin all-->
+
+    </body>
+</html>

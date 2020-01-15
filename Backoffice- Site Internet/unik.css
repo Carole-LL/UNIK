@@ -1,0 +1,365 @@
+/* 
+CODES COULEURS 
+-Turquoise: #56dbb8
+-Gris foncé: #2d2d2d
+-Gris clair: #939292
+-Blanc: #ffffff
+*/
+
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    background-color: #F4F0F0;
+    height:auto;
+    width: 100vw;
+}
+
+.container {  
+    display: flex;
+    
+}
+
+
+/***********************************Barre de droite***********************************/
+
+/*Lensemnle de la barre1*/
+#barre1 {
+    color: white;
+    background-color: #2d2d2d;
+    max-width: 200px;
+    min-width: 200px;
+    margin: none;
+    height: 150vh;
+}
+
+/*Logo*/
+.logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*Menu: icons et texte*/
+#barre1 .icon {
+    border-top: #939292 solid 1px;
+    cursor: pointer;  
+}
+
+/*Icons seulement*/
+#barre1 .menu img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*Menu liste*/
+.menu ul li a:link, a:visited  {
+    color: white;
+    text-decoration: none;
+}
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+    width: 100%;  
+    height: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    float: left;
+    border-top: solid 1px #474646;
+    position: relative;
+}
+
+.menu ul li a {
+    display: block;
+}
+
+.categorie:hover {
+    background-color: #56dbb8;
+}
+
+/*Menu sous-liste*/
+.menu ul li:hover > ul {
+    opacity: 1;
+    visibility: visible ;
+}
+
+.menu ul ul {
+    transition: all 0.3s;
+    opacity: 0;
+    position: absolute;
+    visibility: hidden;
+    left: 100%;
+    top: 0.1%;
+    background-color: #474646;
+    width: 100%;
+}
+
+.menu ul ul li {
+    border-top: solid 1px #2d2d2d; 
+    height: auto;
+    text-align: center;
+}
+
+.menu ul ul li a:hover {
+    color: #56dbb8;
+}
+
+
+/***********************************Barre du haut***********************************/
+
+/*Lensemble de la barre2*/
+#barre2 {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+/*Barre de recherche*/
+#barre2 .recherche {
+    width: 40%;
+}
+
+#barre2 .recherche input {
+    border: none;
+    height: 30px;
+    width: 60%;
+}
+
+/*icon barre de recherche*/
+#barre2 .recherche img {
+    width: 16px;
+    height: auto;
+    background-color: white;
+    margin-left: 8px;
+}
+
+#barre2 .recherche button {
+    border: none;
+    background-color: white;
+    height: 40px;
+    cursor: pointer;
+}
+
+/*Profile: aligner icons, nom du profile et avatar*/
+#barre2 .iconsEtProfile {
+    display: flex; 
+    justify-content: flex-end;
+    width: 60%;
+}
+
+    /*Profile icons*/
+    #barre2 .icons {
+        width: 10vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-right: 10px;
+    }
+
+    #barre2 .icons button {
+        border: none;
+        background-color: white;
+        cursor: pointer;
+    }
+
+    /*Nom du profile*/
+    #barre2 .profile {
+        display: flex;  
+        align-items: center;
+        padding-right: 10px;
+    }
+
+     /*Avatar*/
+    #barre2 .profile img {
+        width: 80px;
+        margin-right: 30px;
+        margin-left: 10px;
+        border-radius: 50%;
+    }
+
+    /*Profile: petite liste déroulante*/
+    .liste {
+        padding-right: 15px;
+        width: 100%;
+        margin: 0 auto;
+        position: stick;
+        top: 0px;
+        border-left: solid 1px gainsboro;
+    }
+
+    .liste ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px ;
+    }
+
+    .liste ul li {
+        float: left;
+        width: 110px;
+        text-align: center;
+        position: relative;
+    }
+
+    .liste ul::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .liste a {
+        display: block;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        padding: 10px 0px;
+        color: black;
+    }
+
+    .liste a:hover{
+        color: #56dbb8;
+        border-bottom: 2px solid #56dbb8;
+    }
+
+    .sous{
+        display: none;
+        box-shadow: 0px 1px 2px #ccc;
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    .liste > ul li:hover .sous {
+        display: block;
+    }
+
+    .sous li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .sous a {
+        padding: 10px;
+        border-bottom: none;
+        color: black;
+    }
+
+    .sous a:hover {
+        border-bottom: none;
+        background-color: white;
+    }
+
+    .deroulant > a::after {
+        content: "▼";
+        font-size: 12px;
+        padding: 5px;
+        
+    }
+
+
+/***********************************Contenu Stat***********************************/
+
+#contenu {
+    width: 80%;
+    display: block;  
+    margin-left: 8%;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+/*H1*/
+.apercu {
+    margin-bottom: 30px;
+    margin-left: 1%;
+}
+
+/*Images du contenu stat*/
+.graphs {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.graph img {
+    width: 100%;
+    height: auto;
+}
+
+.refEtCarte {
+    display: flex;
+    justify-content: space-between;
+}
+
+.stat img {
+    width: 100%;
+    height: auto;
+}
+
+.referent img {
+    width: 100%;
+    height: auto;
+}
+
+.carte img {
+    width: 100%;
+    height: auto;
+}
+.barre2etContenu {
+    width: 100%;
+    height: auto;
+}
+
+/***********************************Contenu Produits***********************************/
+
+.position2 {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.fondEtBenef {
+    display: flex;
+    justify-content: space-between; 
+}
+
+/***********************************Contenu Users***********************************/
+
+/*Barre de recherche*/
+.recherche2 {
+    width: 40%;
+    height: ;
+    background-color: white;
+}
+
+.recherche2 input {
+    border: none;
+    height: 30px;
+    width: 60%;
+}
+
+/*icon barre de recherche*/
+.recherche2 img {
+    width: 16px;
+    height: auto;
+    background-color: white;
+    margin-left: 8px;
+}
+
+.recherche2 button {
+    border: none;
+    background-color: white;
+    height: 40px;
+    cursor: pointer;
+}
+
+.titreRecherche {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin-bottom: 20px;
+}
+
