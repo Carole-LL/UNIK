@@ -326,6 +326,15 @@ html, body {
     justify-content: space-between; 
 }
 
+.benef img {
+    width: 100%;
+    height: auto; 
+}
+
+.fonds img {
+    width: 100%;
+    height: auto;
+}
 /***********************************Contenu Users***********************************/
 
 /*Barre de recherche*/
@@ -363,3 +372,64 @@ html, body {
     margin-bottom: 20px;
 }
 
+/*Ligne tableau*/
+#ligne {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/*Column du tableau*/
+.tab {
+    display: flex;
+    background-color:white;
+    margin: 5px;
+    width: 500px;
+    height: 50%;
+
+}
+
+/*users image et infos*/
+.image {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.names {
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+
+.phone {
+    padding-top: 10px;
+}
+
+.position3 {
+    margin-top: 35px;
+}
+.edit {
+    width: auto;
+}
+
+.edit button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.ajuster {
+    display: flex;
+    align-items: center;
+    height: 150px;
+    background-color: white;
+}
